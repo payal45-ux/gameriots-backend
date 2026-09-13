@@ -22,7 +22,7 @@ const sendMessage = async (req, res) => {
           content: message
         }
       ],
-      model: 'llama-3.3-70b-versatile',
+       model: 'openai/gpt-oss-120b',
     })
 
     const reply = completion.choices[0]?.message?.content || 'No response'
